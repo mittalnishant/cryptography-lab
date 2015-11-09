@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <mpi.h>
 /* x   :  1  3  5   7
-   f(x):  5  15 30  55 */
-float a[4][2]={{1,5},{3,15},{5,30},{7,55}};
+   f(x):  5  15 25  35 */
+float a[4][2]={{1,5},{3,15},{5,25},{7,35}};
 float cal_l_nu(float x,int z)
 {
     float ans=1.0;

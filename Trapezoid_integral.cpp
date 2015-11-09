@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "mpi.h"
-
 float f(float x) {
     float return_val;
     return_val = x*x;
@@ -36,17 +35,20 @@ int main(int argc, char** argv) {
     float       integral, total;
     int         source, dest = 0, tag = 0;
     MPI_Status  status;
-
+    printf("hello\n");
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
     MPI_Comm_size(MPI_COMM_WORLD, &p);
+    printf("a %f  b %f\n",a,b );
 
     h = (b-a)/n;
     local_n = n/p;
 
     local_a = a + my_rank*local_n*h;
     local_b = local_a + local_n*h;
+    printf("local_a %f  local_b %f\n",local_a,local_b );
     integral = Trap(local_a, local_b, local_n, h);
+    
 
     if (my_rank == 0) {
         total = integral;

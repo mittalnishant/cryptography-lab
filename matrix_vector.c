@@ -6,7 +6,7 @@
 #include "mpi.h"
 
 #define AROW 3
-#define ACOL 2
+#define ACOL 3
  
 #define MAX_VALUE 10
 
