@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NRA 10                
-#define NCA 10              
-#define NCB 10           
+#define NRA 3                
+#define NCA 3              
+#define NCB 3           
 #define MASTER 0               
 #define FROM_MASTER 1          
 #define FROM_WORKER 2          

@@ -3,7 +3,7 @@
 #include<string.h>
 #include<mpi.h>
 
-#define ARRAY_SIZE 1024
+#define ARRAY_SIZE 12
 
 int main(int argc, char *argv[])
 {
@@ -57,6 +57,7 @@ int main(int argc, char *argv[])
 		{
 		    MPI_Recv(&temp, 1, MPI_INT, rank-key,0,MPI_COMM_WORLD,&status);
 		    sum += temp;
+		    printf("sum is %d\n",sum);
 		}
 		key = 2 * key;
 		MPI_Barrier(MPI_COMM_WORLD);
@@ -72,3 +73,4 @@ int main(int argc, char *argv[])
 	MPI_Finalize();
 	return 0;
 }
+// take number of processors as 4
