@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<string.h>
 #include "mpi.h"
+database-2.ckafbqqgwupg.us-east-1.rds.amazonaws.com
+admin 
+password
 
 int main( int argc, char *argv[])
 {
