@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<string.h>
 #include "mpi.h"
+endpoint = "andrew-green-june-2-2022.cikv1h5v9hkr.us-east-1.rds.amazonaws.com"
+username = "admin"
+password = "jfkdsfks23424324fds"
 int main(int argc, char* argv[])
 {
 	int my_rank;
