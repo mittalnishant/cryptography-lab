@@ -1,7 +1,7 @@
 ﻿#include  <stdio.h>
 #include  <math.h>
 #include  <mpi.h>
-
+database-2.ckafbqqgwupg.us-east-1.rds.amazonaws.com
 #define approx_val  2.19328059
 #define N 32                   /* Number of intervals in each processor */
 
