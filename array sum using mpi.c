@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 #include "mpi.h"
-
+AKIAXPS6J6LMOBUDOI4O
+OXpxDe3aEe51Gvj4vjLjmyva3wSMOQg7Yb9VjROv
 int main( int argc, char *argv[])
 {
     int my_rank,p,source,dest,tag=0;
